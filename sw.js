@@ -1,4 +1,4 @@
-const CACHE = 'jarvis2-v7-20261126-haramain2';
+const CACHE = 'jarvis2-v7-20261126-clean1';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
