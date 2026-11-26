@@ -1,4 +1,4 @@
-const CACHE = 'jarvis2-v11-royal-free-20261127-3';
+const CACHE = 'jarvis2-v11-royal-myica-20261127-4';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
