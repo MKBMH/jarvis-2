@@ -1,4 +1,4 @@
-const CACHE = 'jarvis2-v10-fortress-20261126-1';
+const CACHE = 'jarvis2-v10-traffic-20261126-1';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
