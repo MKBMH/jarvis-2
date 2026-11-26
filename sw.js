@@ -1,4 +1,4 @@
-const CACHE = 'jarvis2-v6-20261126-private1';
+const CACHE = 'jarvis2-v6-20261126-carplay1';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
