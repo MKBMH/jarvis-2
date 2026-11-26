@@ -1,5 +1,23 @@
-const CACHE='jarvis2-v3-20261126-comms8';
-const FILES=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['./','./index.html'].map(url=>new Request(url,{cache:'reload'}))).then(()=>Promise.allSettled(FILES.slice(2).map(url=>c.add(new Request(url,{cache:'reload'})))))).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('jarvis2-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==location.origin)return;e.respondWith(fetch(e.request).catch(()=>caches.open(CACHE).then(c=>c.match(e.request)).then(r=>r||(e.request.mode==='navigate'?caches.open(CACHE).then(c=>c.match('./index.html')).then(r=>r||Response.error()):Response.error()))))});
+const CACHE = 'jarvis2-v4-20261126-guardian1';
+self.addEventListener('install', event => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    await cache.addAll(['./','./index.html'].map(url => new Request(url,{cache:'reload'})));
+    await Promise.allSettled(['./manifest.webmanifest','./icon-192.png','./icon-512.png'].map(url => cache.add(new Request(url,{cache:'reload'}))));
+    await self.skipWaiting();
+  })());
+});
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    await Promise.all((await caches.keys()).filter(k => k.startsWith('jarvis2-') && k !== CACHE).map(k => caches.delete(k)));
+    await self.clients.claim();
+  })());
+});
+self.addEventListener('fetch', event => {
+  const req=event.request;
+  if(req.method!=='GET'||new URL(req.url).origin!==self.location.origin)return;
+  event.respondWith((async()=>{
+    try { return await fetch(req,{cache:req.mode==='navigate'?'no-store':'default'}); }
+    catch { const c=await caches.open(CACHE); return (await c.match(req))||(req.mode==='navigate'?await c.match('./index.html'):null)||Response.error(); }
+  })());
+});
