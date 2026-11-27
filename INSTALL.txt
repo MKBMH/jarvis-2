@@ -1,7 +1,7 @@
-JARVIS 14.0 Infinity — build 14-infinity2
+JARVIS 14.0 Infinity — Sentinel Command
+Build 14-sentinel1
 
-Back up settings, vault and recordings separately. Upload index.html, sw.js and manifest.webmanifest to your existing GitHub Pages repository, replacing the original files. Keep the existing Home Screen icon and existing icons in the repository. After successful deployment open https://mkbmh.github.io/jarvis-2/?v=14-infinity2.
-
-Communications Centre keeps manual calling, call briefs, caller screening and spoken manual reports. No autonomous call or incoming AI answering. No new paid telephone provider is configured. Standard carrier charges and other existing service fees may still apply. This update does not cancel external accounts or subscriptions.
-
-All other source content retained except version identifier and communications wording. JavaScript syntax checked; live iPhone operation and external services not tested.
+Back up existing settings, recordings and vault separately. Extract ZIP; replace index.html, sw.js, manifest.webmanifest in existing repository root. Keep existing icons. Do not delete the existing Home Screen app or clear site data.
+After GitHub Pages deployment succeeds, open https://mkbmh.github.io/jarvis-2/?v=14-sentinel1 in Safari. Search Sentinel Command in clickable directory or enter /sentinelcommand.
+Case drafts and link analysis are session-only. JSON export is unencrypted; evidence originals must be saved separately in existing encrypted Evidence Locker. Audio decoding depends on device/browser. No police system access, no new paid services. Existing provider links may have their own limits.
+Tests: Chromium loaded HTML and opened all 10 workflows; preserved 77 module identifiers, 78 total, 20 quick actions, 169 clickable commands. Case event and export, SHA-256 receipt using test harness digest (browser insecure context), URL inspection, WAV decode and link deduplication passed. HTTPS deployment, live feeds and iPhone not tested.
