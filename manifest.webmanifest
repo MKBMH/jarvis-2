@@ -1,6 +1,6 @@
 {
-  "name": "JARVIS 13.0 Platinum Smart Daily Life Edition",
-  "short_name": "JARVIS 13.0",
+  "name": "JARVIS",
+  "short_name": "JARVIS",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

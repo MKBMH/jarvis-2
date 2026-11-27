@@ -1,2 +1,11 @@
-JARVIS 13.0 Platinum – Worldwide Live CCTV
-Replace index.html and sw.js in the existing GitHub Pages repository. Manifest is unchanged. Keep existing icons, backend and shortcuts. Reload online. Use /worldcctv or the Worldwide Live CCTV module, or open Worldwide CCTV from the Globe. Public provider pages open externally; availability varies. No new iPhone shortcut needed.
+JARVIS 14.0 Infinity Protocol — build 14-infinity1
+
+1. Export existing settings, vault and recordings separately before changes. Keep the existing Home Screen icon.
+2. Save and extract the ZIP in Files. Upload index.html, sw.js and manifest.webmanifest to the root of mkbmh/jarvis-2 main branch, replacing originals. Keep existing icons.
+3. Check GitHub Actions for successful Pages deployment. Open https://mkbmh.github.io/jarvis-2/?v=14-infinity1 in Safari.
+4. Verify 77 modules, 20 Quick Actions and 12 original dashboard workflows. Open Infinity or /help.
+5. Existing installed icon labels may not change. Use a new Home Screen icon named JARVIS only after backing up; do not delete original until private data is verified.
+
+Tested in Chromium using in-memory HTML (network navigation restricted): 76 original module IDs preserved, 77 unique modules, 20 quick actions, 158 directory entries, all 12 Infinity routes, expense add/remove and budget calculation, translator language swap, glucose record generation, update panel and no JS runtime errors. Node syntax checks passed. Actual iPhone permissions, service worker deployment, calls, AI and external links not live-tested.
+
+Telephone AI pending Twilio/voice backend; image analysis requires manual attachment in ChatGPT; translation and task planning use existing text backend after consent; expense worksheet session-only; health records are not automatically stored. Existing notes are local, and private records require existing encrypted vault. Public feed monitoring foreground only. No new credentials or paid services configured.
