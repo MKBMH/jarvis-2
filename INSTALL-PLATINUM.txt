@@ -1,0 +1,25 @@
+JARVIS 13.0 PLATINUM — installation
+
+1. Keep a copy of your existing GitHub files. Replace index.html, sw.js and manifest.webmanifest in the same GitHub Pages repository. Leave existing icons, backend, credentials, and other files unchanged. Do not clear website data: it may remove local JARVIS settings.
+2. Open the published JARVIS website in Safari, refresh, then close and reopen the home screen app. Look for JARVIS 13.0 and Platinum. Existing Home Screen labels may stay unchanged.
+3. Install only the native apps you need. In iPhone Shortcuts tap +, add Open App, select the app, rename exactly, and save. Test each shortcut locally, then tap its JARVIS button.
+4. Use /platinumsetup to view and copy shortcut names. Use /shortcutcheck to test and manually record success. No JARVIS AI token is required for these local actions.
+
+SHORTCUT NAMES (case and punctuation matter)
+Singpass: JARVIS Open Singpass
+LifeSG: JARVIS Open LifeSG
+OneService: JARVIS Open OneService
+Parking.sg: JARVIS Open Parking.sg
+what3words: JARVIS Open what3words
+SGSecure: JARVIS Open SGSecure
+Bitwarden: JARVIS Open Bitwarden
+Touch n Go eWallet: JARVIS Open Touch n Go eWallet
+MyJPJ: JARVIS Open MyJPJ
+Grab: JARVIS Open Grab
+SafetyCulture: JARVIS Open SafetyCulture
+Adobe Scan: JARVIS Open Adobe Scan
+Google Translate: JARVIS Open Google Translate
+
+Fuel Kaki: website link, no native shortcut required.
+
+The launchers do not install apps, create accounts, make payments, fill forms or bypass authentication. Some provider functions or purchases cost money; SafetyCulture and other apps may offer limited free plans. The existing Titanium security, Truecaller, MyICA, MyNIISe, Globe, and diagnostic tools remain in the source. Live external services and native iOS launches require device testing.
