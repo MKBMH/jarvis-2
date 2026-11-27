@@ -1,0 +1,6 @@
+JARVIS 14.0 Master Access — build 14-masteraccess1
+
+Replace index.html, sw.js and manifest.webmanifest in your existing GitHub repository. Keep icons and other repository files. Do not clear Safari data. Export unfinished cases and recordings first.
+Open /masteraccess, choose a unique 12+ character passphrase, confirm it, then unlock. Save notes before navigating away or locking. Auto-lock defaults to three minutes; workspace locks when hidden or closed. Export the encrypted archive separately. No password recovery.
+Master Access encrypts only its own notes, inactivity preference and last 200 recorded workspace actions. The existing vault and Time Capsule are separate. Public modules remain publicly accessible; this is not server-enforced admin authentication, a system-wide audit log or an iPhone device lock. No restricted government access or paid integrations.
+Tests: source and command preservation; isolated browser with simulated storage and cryptography bridge using real Python AES-GCM/PBKDF2; native Node WebCrypto round trip, wrong password and tamper rejection; backup export/restore interface (download captured); session lockdown; syntax checks. Live iPhone and GitHub deployment not tested.
