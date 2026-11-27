@@ -1,4 +1,2 @@
-JARVIS 14.0 Sentinel Case Pro
-Upload index.html, sw.js and manifest.webmanifest to the existing GitHub Pages repository. Keep existing icons.
-Open https://mkbmh.github.io/jarvis-2/?v=14-casepro1 after successful deployment.
-Use /sentinelcase. Save encrypted case archive to Files. PDF: Print / Save PDF report, then use iPhone print preview and Share > Save to Files. Original files remain separate. Do not clear website data.
+JARVIS 14.0 Search & Rescue Assistance — build 14-searchrescue1
+Before updating, export any open Case Pro draft and separately back up original evidence and recordings. Extract ZIP; upload index.html, sw.js and manifest.webmanifest to the existing GitHub Pages repository root, replacing the corresponding files only. Keep existing icons. After deployment, open https://mkbmh.github.io/jarvis-2/?v=14-searchrescue1 and search /searchrescue. Expected count: 79 modules. No new paid service or tracking integration. Location sharing is voluntary and performed in the respective apps. External service availability and actual iPhone operation not tested. Case records are session-only until encrypted export. Appeal drafts are private and unencrypted when printed; obtain approval before sharing.

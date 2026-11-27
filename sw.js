@@ -1,4 +1,4 @@
-const CACHE = 'jarvis2-v14-casepro1';
+const CACHE = 'jarvis2-v14-searchrescue1';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
