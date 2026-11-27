@@ -1,11 +1,7 @@
-JARVIS 14.0 Infinity Protocol — build 14-infinity1
+JARVIS 14.0 Infinity — build 14-infinity2
 
-1. Export existing settings, vault and recordings separately before changes. Keep the existing Home Screen icon.
-2. Save and extract the ZIP in Files. Upload index.html, sw.js and manifest.webmanifest to the root of mkbmh/jarvis-2 main branch, replacing originals. Keep existing icons.
-3. Check GitHub Actions for successful Pages deployment. Open https://mkbmh.github.io/jarvis-2/?v=14-infinity1 in Safari.
-4. Verify 77 modules, 20 Quick Actions and 12 original dashboard workflows. Open Infinity or /help.
-5. Existing installed icon labels may not change. Use a new Home Screen icon named JARVIS only after backing up; do not delete original until private data is verified.
+Back up settings, vault and recordings separately. Upload index.html, sw.js and manifest.webmanifest to your existing GitHub Pages repository, replacing the original files. Keep the existing Home Screen icon and existing icons in the repository. After successful deployment open https://mkbmh.github.io/jarvis-2/?v=14-infinity2.
 
-Tested in Chromium using in-memory HTML (network navigation restricted): 76 original module IDs preserved, 77 unique modules, 20 quick actions, 158 directory entries, all 12 Infinity routes, expense add/remove and budget calculation, translator language swap, glucose record generation, update panel and no JS runtime errors. Node syntax checks passed. Actual iPhone permissions, service worker deployment, calls, AI and external links not live-tested.
+Communications Centre keeps manual calling, call briefs, caller screening and spoken manual reports. No autonomous call or incoming AI answering. No new paid telephone provider is configured. Standard carrier charges and other existing service fees may still apply. This update does not cancel external accounts or subscriptions.
 
-Telephone AI pending Twilio/voice backend; image analysis requires manual attachment in ChatGPT; translation and task planning use existing text backend after consent; expense worksheet session-only; health records are not automatically stored. Existing notes are local, and private records require existing encrypted vault. Public feed monitoring foreground only. No new credentials or paid services configured.
+All other source content retained except version identifier and communications wording. JavaScript syntax checked; live iPhone operation and external services not tested.
