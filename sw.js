@@ -1,4 +1,4 @@
-const CACHE = 'jarvis2-v12-titanium-20261127-2';
+const CACHE = 'jarvis2-v12-titanium-20261127-truecaller-3';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
