@@ -1,16 +1,2 @@
-JARVIS 4.0 — INTELLIGENCE & GUARDIAN EDITION
-26 November 2026 | Singapore
-
-INSTALL / UPDATE YOUR EXISTING GITHUB PAGES SITE
-1. Back up the existing repository files. Do not delete your repository or change its URL.
-2. Replace index.html, sw.js and manifest.webmanifest at the existing site root.
-3. Keep icon-192.png and icon-512.png and any other existing files. This upgrade does not include replacement icons or change the Cloudflare worker.
-4. Commit all three files together. Check that GitHub Pages deployment succeeded.
-5. Open the published URL in Safari and verify JARVIS 4.0. Close and reopen the Home Screen app. If still old, refresh in Safari and reopen. Avoid deleting website data: it can erase saved reminders, settings, parking and notes.
-6. Test the existing AI connection and new modules. Enter only your existing JARVIS access token; never enter your OpenAI API key.
-
-Eight new commands: /guardian /sos /memory /intelligence /fmcentre /location /device /agent
-Existing storage keys and existing modules are retained. New notes and FM records use separate local storage. Export these separately; the legacy settings backup does not include them. All locally stored data is unencrypted; do not store secrets or confidential work records.
-Guardian flags suspicious patterns locally; it does not establish safety. SOS calls and location sharing require deliberate user action. Location alerts stop when the panel is closed or app is hidden. Daily agent briefing and rain alerts run only while the app is visible; use native Calendar, Reminders or Shortcuts for background alerts. Device verification is optional WebAuthn and requires a compatible HTTPS browser; it is not a site lock or a substitute for server authentication. Passkey registration/verification, voice, native app links, live APIs and Home Screen behavior require testing on your actual iPhone. No new paid services or server changes are required for the local features.
-
-VALIDATION: JavaScript syntax checks passed for both files. Chromium DOM tests with simulated weather, storage and GPS passed for 37 rendered module buttons, local Guardian, SOS location text, notes, FM log and CSV, intelligence, geofence, agent schedule and calendar export, existing WhatsApp cleanup, Truecaller and help routing. Full navigation was blocked in the test environment, so deployment, service-worker lifecycle, real APIs, physical biometric authentication and iOS integration were not end-to-end tested.
+JARVIS 13.0 Platinum – Worldwide Live CCTV
+Replace index.html and sw.js in the existing GitHub Pages repository. Manifest is unchanged. Keep existing icons, backend and shortcuts. Reload online. Use /worldcctv or the Worldwide Live CCTV module, or open Worldwide CCTV from the Globe. Public provider pages open externally; availability varies. No new iPhone shortcut needed.
