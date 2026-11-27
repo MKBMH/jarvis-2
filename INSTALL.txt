@@ -1,5 +1,13 @@
-JARVIS 14.0 — Black Diamond Protocol
+JARVIS 14.0 Black Diamond — HDB Car Park Command
+Build 14-hdbparking1
 
-Back up your unfinished cases, recordings and private data separately. Replace index.html, sw.js and manifest.webmanifest at the root of your existing GitHub Pages repository. Retain existing icons and other files. After publication, test https://mkbmh.github.io/jarvis-2/?v=14-blackdiamond1 in Safari Private Browsing if the old build remains visible. Do not clear existing website data. Open /blackdiamond.
+Before updating, export unfinished cases and back up private recordings and settings separately.
+Replace index.html, sw.js and manifest.webmanifest in the existing jarvis-2 GitHub repository. Keep existing icons and other assets. After GitHub Pages deployment, open:
+https://mkbmh.github.io/jarvis-2/?v=14-hdbparking1
+Search /hdbcarpark, select the islandwide finder and tap Load islandwide directory. Search by block, street, town or car park code. Refresh availability manually. Optional current-location sorting is local; Waze navigation opens an external service. View only while safely parked.
 
-81 modules; 201 clickable command entries. All 80 existing module identifiers retained. Chromium local UI tests: 12 workflow panels, image structure, audio spectrum, archive URL filtering, mock motion sensor and report creation/removal. ECDSA verification and tampered file rejection tested separately with native Node WebCrypto. No live external services or physical iPhone sensors tested. No new paid integration. External resources are optional and may change. Signature keys are ephemeral and do not establish identity; file structure checks do not prove hidden content or image authenticity. Export reports are unencrypted; use Evidence Locker.
+82 modules (81 original identifiers retained), 206 commands (all original command identifiers retained), 4 new workflows and a hub.
+No new paid integrations. Parking and mobile data charges may apply.
+Sources: HDB Carpark Information, HDB Carpark Availability and LTA Traffic Images on data.gov.sg; HDB official short-term parking charges and contact pages; SPF reporting services. Public road camera snapshots are not private HDB car park CCTV.
+
+Tests: Chromium mobile-size UI with mocked API responses, including pagination, search, availability join, nearest-camera sorting and Waze link; coordinate conversion compared to EPSG:3414 reference using pyproj; fee calculation and request draft; JavaScript syntax checked. Live APIs, iPhone permissions and deployment not tested. Data availability depends on upstream service coverage and browser access. Parking fee calculator uses user-entered rates only. Location and drafts are not stored by the new centre.
