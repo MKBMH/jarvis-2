@@ -1,7 +1,4 @@
-JARVIS 14.0 Infinity — Sentinel Command
-Build 14-sentinel1
-
-Back up existing settings, recordings and vault separately. Extract ZIP; replace index.html, sw.js, manifest.webmanifest in existing repository root. Keep existing icons. Do not delete the existing Home Screen app or clear site data.
-After GitHub Pages deployment succeeds, open https://mkbmh.github.io/jarvis-2/?v=14-sentinel1 in Safari. Search Sentinel Command in clickable directory or enter /sentinelcommand.
-Case drafts and link analysis are session-only. JSON export is unencrypted; evidence originals must be saved separately in existing encrypted Evidence Locker. Audio decoding depends on device/browser. No police system access, no new paid services. Existing provider links may have their own limits.
-Tests: Chromium loaded HTML and opened all 10 workflows; preserved 77 module identifiers, 78 total, 20 quick actions, 169 clickable commands. Case event and export, SHA-256 receipt using test harness digest (browser insecure context), URL inspection, WAV decode and link deduplication passed. HTTPS deployment, live feeds and iPhone not tested.
+JARVIS 14.0 Sentinel Case Pro
+Upload index.html, sw.js and manifest.webmanifest to the existing GitHub Pages repository. Keep existing icons.
+Open https://mkbmh.github.io/jarvis-2/?v=14-casepro1 after successful deployment.
+Use /sentinelcase. Save encrypted case archive to Files. PDF: Print / Save PDF report, then use iPhone print preview and Share > Save to Files. Original files remain separate. Do not clear website data.
