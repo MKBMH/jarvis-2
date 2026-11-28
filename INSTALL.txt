@@ -1,13 +1,14 @@
-JARVIS 14.0 Black Diamond — HDB Car Park Command
-Build 14-hdbparking1
+JARVIS 18.0 — MILITARY INTELLIGENCE PROTOCOL
+UPDATE ONLY — do not delete your existing project or its other files.
 
-Before updating, export unfinished cases and back up private recordings and settings separately.
-Replace index.html, sw.js and manifest.webmanifest in the existing jarvis-2 GitHub repository. Keep existing icons and other assets. After GitHub Pages deployment, open:
-https://mkbmh.github.io/jarvis-2/?v=14-hdbparking1
-Search /hdbcarpark, select the islandwide finder and tap Load islandwide directory. Search by block, street, town or car park code. Refresh availability manually. Optional current-location sorting is local; Waze navigation opens an external service. View only while safely parked.
+1. Back up the current index.html and sw.js from your existing repository.
+2. Replace those two files with the included index.html and sw.js, keeping their exact filenames and existing folder location.
+3. Commit the changes to the branch used by Cloudflare Pages. Wait until the deployment reports Success in Cloudflare before opening the existing JARVIS URL in Safari.
+4. Check that the header shows JARVIS 18.0. Close and reopen the existing Home Screen shortcut. If the old version persists, use the existing JARVIS update controls or reopen the same website in Safari. Avoid clearing website data unless you have backed up your local settings and records.
+5. Tap Open Intelligence Command Centre, or enter /militaryintel.
 
-82 modules (81 original identifiers retained), 206 commands (all original command identifiers retained), 4 new workflows and a hub.
-No new paid integrations. Parking and mobile data charges may apply.
-Sources: HDB Carpark Information, HDB Carpark Availability and LTA Traffic Images on data.gov.sg; HDB official short-term parking charges and contact pages; SPF reporting services. Public road camera snapshots are not private HDB car park CCTV.
+Keep your existing manifest, icons, Worker/backend settings, and Cloudflare access controls. This update does not create a new website or grant access to restricted systems.
 
-Tests: Chromium mobile-size UI with mocked API responses, including pagination, search, availability join, nearest-camera sorting and Waze link; coordinate conversion compared to EPSG:3414 reference using pyproj; fee calculation and request draft; JavaScript syntax checked. Live APIs, iPhone permissions and deployment not tested. Data availability depends on upstream service coverage and browser access. Parking fee calculator uses user-entered rates only. Location and drafts are not stored by the new centre.
+Verification: 90 original module identifiers preserved, 91 unique identifiers after upgrade. All 12 new menu buttons and command routes checked in a 390px mobile Chromium viewport. JPEG metadata reader verified with a synthetic image. JavaScript syntax checked for HTML and service worker. Actual iPhone Safari, service-worker deployment, and external provider availability/pricing were not tested. External network requests were not needed for the local menu test.
+
+The command centre reuses existing modules. Optional third-party links may require registration or offer paid tiers. No paid service is automatically purchased or activated. Copernicus Browser is used for Sentinel imagery; personal exposure checks reuse Have I Been Pwned rather than adding a second breach database.

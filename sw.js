@@ -1,23 +1,4 @@
-const CACHE = 'jarvis2-v17-supreme1';
-self.addEventListener('install', event => {
-  event.waitUntil((async () => {
-    const cache = await caches.open(CACHE);
-    await cache.addAll(['./','./index.html'].map(url => new Request(url,{cache:'reload'})));
-    await Promise.allSettled(['./manifest.webmanifest','./icon-192.png','./icon-512.png'].map(url => cache.add(new Request(url,{cache:'reload'}))));
-    await self.skipWaiting();
-  })());
-});
-self.addEventListener('activate', event => {
-  event.waitUntil((async () => {
-    await Promise.all((await caches.keys()).filter(k => k.startsWith('jarvis2-') && k !== CACHE).map(k => caches.delete(k)));
-    await self.clients.claim();
-  })());
-});
-self.addEventListener('fetch', event => {
-  const req=event.request;
-  if(req.method!=='GET'||new URL(req.url).origin!==self.location.origin)return;
-  event.respondWith((async()=>{
-    try { return await fetch(req,{cache:req.mode==='navigate'?'no-store':'default'}); }
-    catch { const c=await caches.open(CACHE); return (await c.match(req))||(req.mode==='navigate'?await c.match('./index.html'):null)||Response.error(); }
-  })());
-});
+const CACHE='jarvis2-v18-military-20261128-1';
+self.addEventListener('install',e=>e.waitUntil((async()=>{const c=await caches.open(CACHE);await c.add(new Request('./index.html',{cache:'reload'}));await Promise.allSettled(['./manifest.webmanifest','./icon-192.png','./icon-512.png'].map(x=>c.add(new Request(x,{cache:'reload'}))));await self.skipWaiting()})()));
+self.addEventListener('activate',e=>e.waitUntil((async()=>{await Promise.all((await caches.keys()).filter(k=>k.startsWith('jarvis2-')&&k!==CACHE).map(k=>caches.delete(k)));await self.clients.claim()})()));
+self.addEventListener('fetch',e=>{const r=e.request,u=new URL(r.url),base=new URL(self.registration.scope);if(r.method!=='GET'||u.origin!==base.origin)return;const shell=['index.html','manifest.webmanifest','icon-192.png','icon-512.png'].map(x=>new URL(x,base).pathname);if(!shell.includes(u.pathname)&&u.pathname!==base.pathname)return;e.respondWith((async()=>{try{const response=await fetch(r,{cache:r.mode==='navigate'?'no-store':'default'});if(response.ok){const c=await caches.open(CACHE);await c.put(r,response.clone());}return response}catch{const c=await caches.open(CACHE);return await c.match(r)||(r.mode==='navigate'?await c.match('./index.html'):null)||Response.error()}})())});
