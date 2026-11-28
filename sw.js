@@ -1,4 +1,4 @@
-const CACHE = 'jarvis2-v16-superpowers1';
+const CACHE = 'jarvis2-v17-supreme1';
 self.addEventListener('install', event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE);
